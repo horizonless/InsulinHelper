@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qTN-cz-7io">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="obU-g6-xeM">
+            <objects>
+                <controller id="qTN-cz-7io">
+                    <items>
+                        <group width="1" alignment="left" id="yLF-jk-Oar">
+                            <items>
+                                <button width="90" height="90" alignment="right" title="能量" id="f6P-jf-TwU">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="17"/>
+                                    <connections>
+                                        <segue destination="AgC-eL-Hgc" kind="push" id="j9y-z0-4Rf"/>
+                                    </connections>
+                                </button>
+                                <button width="90" height="90" alignment="left" title="三要素" id="sdq-Yu-zBf">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="17"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="t1i-xn-9uW">
+                            <items>
+                                <button width="90" height="90" alignment="left" title="转化帮手" id="TDm-z2-Jc2">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="17"/>
+                                </button>
+                                <button width="90" height="90" alignment="right" title="血糖记录" id="Oav-Mg-M2a">
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="17"/>
+                                    <connections>
+                                        <segue destination="uAw-N6-P32" kind="push" id="Po2-h5-lu0"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.52173913043478" y="46.294642857142861"/>
+        </scene>
+        <!--GlucoseRecorder-->
+        <scene sceneID="rg5-Ux-9yX">
+            <objects>
+                <controller identifier="GlucoseRecorder" id="uAw-N6-P32" customClass="GlucoseRecorder" customModule="InsulinWatch_Extension">
+                    <items>
+                        <group width="1" height="49" alignment="left" id="Mr0-ml-wr4">
+                            <items>
+                                <button width="30" height="30" alignment="right" title="+" id="gua-HU-krb">
+                                    <color key="titleColor" name="AccentColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                </button>
+                                <label width="60" height="29" alignment="left" text="Label" textAlignment="center" id="VHH-Pa-mf6"/>
+                            </items>
+                        </group>
+                        <group width="1" height="126" alignment="center" verticalAlignment="center" id="Nab-PK-rji"/>
+                    </items>
+                    <connections>
+                        <outlet property="currentTimeLabel" destination="VHH-Pa-mf6" id="2ha-Kl-XsM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="463.43478260869563" y="45.535714285714285"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InsulinWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="Tbc-xs-cim">
+                            <items>
+                                <label width="78" alignment="left" text="能量" textAlignment="center" id="pYA-mF-6tg"/>
+                                <label width="65" alignment="right" text="系数" textAlignment="center" id="Ku8-Jh-mbY"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="fKd-Wu-cNO">
+                            <items>
+                                <picker width="75" height="100" alignment="left" id="mMy-zT-sap" colorLabel="IBBuiltInLabel-Green">
+                                    <variation key="device=watch44mm" verticalAlignment="top"/>
+                                    <connections>
+                                        <action selector="pickerDidChangeWithValue:" destination="AgC-eL-Hgc" id="xuE-qJ-MER"/>
+                                    </connections>
+                                </picker>
+                                <picker width="64" height="100" alignment="right" id="DjN-59-vm1">
+                                    <connections>
+                                        <action selector="setRatioNumWithValue:" destination="AgC-eL-Hgc" id="nRR-0I-T6M"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <label alignment="center" text="注射剂量" textAlignment="center" id="K00-eF-ZRl">
+                            <color key="textColor" red="0.47192192803506172" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="25"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="output" destination="K00-eF-ZRl" id="HyS-1M-ax2"/>
+                        <outlet property="picker" destination="mMy-zT-sap" id="Xna-qf-Ly3"/>
+                        <outlet property="ratioPicker" destination="DjN-59-vm1" id="XPg-b1-HHq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="344"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="InsulinWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="InsulinWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

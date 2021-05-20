@@ -13,7 +13,63 @@
 		583B1B5C25640A7400B43980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583B1B5A25640A7400B43980 /* Main.storyboard */; };
 		583B1B5E25640A7600B43980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583B1B5D25640A7600B43980 /* Assets.xcassets */; };
 		583B1B6125640A7600B43980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583B1B5F25640A7600B43980 /* LaunchScreen.storyboard */; };
+		585B0F0A25655574000CFB2D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 585B0F0825655574000CFB2D /* Interface.storyboard */; };
+		585B0F0C25655576000CFB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585B0F0B25655576000CFB2D /* Assets.xcassets */; };
+		585B0F1325655576000CFB2D /* InsulinWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 585B0F1225655576000CFB2D /* InsulinWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		585B0F1825655576000CFB2D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B0F1725655576000CFB2D /* InterfaceController.swift */; };
+		585B0F1A25655576000CFB2D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B0F1925655576000CFB2D /* ExtensionDelegate.swift */; };
+		585B0F1C25655576000CFB2D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B0F1B25655576000CFB2D /* NotificationController.swift */; };
+		585B0F1E25655576000CFB2D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B0F1D25655576000CFB2D /* ComplicationController.swift */; };
+		585B0F2025655577000CFB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585B0F1F25655577000CFB2D /* Assets.xcassets */; };
+		585B0F2525655577000CFB2D /* InsulinWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 585B0F0625655574000CFB2D /* InsulinWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5887837525C1C8030009A598 /* GlucoseRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5887837425C1C8030009A598 /* GlucoseRecorder.swift */; };
+		58EABF71256433CF0094E175 /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EABF70256433CE0094E175 /* Icon-180.png */; };
+		58EABF74256434040094E175 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EABF73256434040094E175 /* Icon-120.png */; };
+		58FC3F252656982500F10BEB /* InjectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FC3F242656982500F10BEB /* InjectionModel.swift */; };
+		58FC3F272656A07600F10BEB /* InsulinRecordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FC3F262656A07600F10BEB /* InsulinRecordList.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		585B0F1425655576000CFB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 583B1B4925640A7300B43980 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 585B0F1125655576000CFB2D;
+			remoteInfo = "InsulinWatch Extension";
+		};
+		585B0F2325655577000CFB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 583B1B4925640A7300B43980 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 585B0F0525655574000CFB2D;
+			remoteInfo = InsulinWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		585B0F2625655577000CFB2D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				585B0F2525655577000CFB2D /* InsulinWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B0F2925655577000CFB2D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				585B0F1325655576000CFB2D /* InsulinWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		583B1B5125640A7400B43980 /* InsulinHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsulinHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +80,34 @@
 		583B1B5D25640A7600B43980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		583B1B6025640A7600B43980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		583B1B6225640A7600B43980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585B0F0625655574000CFB2D /* InsulinWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsulinWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		585B0F0925655574000CFB2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		585B0F0B25655576000CFB2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		585B0F0D25655576000CFB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585B0F1225655576000CFB2D /* InsulinWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InsulinWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		585B0F1725655576000CFB2D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		585B0F1925655576000CFB2D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		585B0F1B25655576000CFB2D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		585B0F1D25655576000CFB2D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		585B0F1F25655577000CFB2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		585B0F2125655577000CFB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585B0F2225655577000CFB2D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5887837425C1C8030009A598 /* GlucoseRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseRecorder.swift; sourceTree = "<group>"; };
+		58EABF70256433CE0094E175 /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
+		58EABF73256434040094E175 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		58FC3F242656982500F10BEB /* InjectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionModel.swift; sourceTree = "<group>"; };
+		58FC3F262656A07600F10BEB /* InsulinRecordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinRecordList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		583B1B4E25640A7400B43980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B0F0F25655576000CFB2D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				583B1B5325640A7400B43980 /* InsulinHelper */,
+				585B0F0725655574000CFB2D /* InsulinWatch */,
+				585B0F1625655576000CFB2D /* InsulinWatch Extension */,
 				583B1B5225640A7400B43980 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				583B1B5125640A7400B43980 /* InsulinHelper.app */,
+				585B0F0625655574000CFB2D /* InsulinWatch.app */,
+				585B0F1225655576000CFB2D /* InsulinWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,10 +145,55 @@
 				583B1B5825640A7400B43980 /* ViewController.swift */,
 				583B1B5A25640A7400B43980 /* Main.storyboard */,
 				583B1B5D25640A7600B43980 /* Assets.xcassets */,
+				58EABF73256434040094E175 /* Icon-120.png */,
 				583B1B5F25640A7600B43980 /* LaunchScreen.storyboard */,
+				58EABF70256433CE0094E175 /* Icon-180.png */,
 				583B1B6225640A7600B43980 /* Info.plist */,
 			);
 			path = InsulinHelper;
+			sourceTree = "<group>";
+		};
+		585B0F0725655574000CFB2D /* InsulinWatch */ = {
+			isa = PBXGroup;
+			children = (
+				585B0F0825655574000CFB2D /* Interface.storyboard */,
+				585B0F0B25655576000CFB2D /* Assets.xcassets */,
+				585B0F0D25655576000CFB2D /* Info.plist */,
+			);
+			path = InsulinWatch;
+			sourceTree = "<group>";
+		};
+		585B0F1625655576000CFB2D /* InsulinWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				58FC3F222656978900F10BEB /* Model */,
+				58FC3F232656979100F10BEB /* Views */,
+				585B0F1725655576000CFB2D /* InterfaceController.swift */,
+				5887837425C1C8030009A598 /* GlucoseRecorder.swift */,
+				585B0F1925655576000CFB2D /* ExtensionDelegate.swift */,
+				585B0F1B25655576000CFB2D /* NotificationController.swift */,
+				585B0F1D25655576000CFB2D /* ComplicationController.swift */,
+				585B0F1F25655577000CFB2D /* Assets.xcassets */,
+				585B0F2125655577000CFB2D /* Info.plist */,
+				585B0F2225655577000CFB2D /* PushNotificationPayload.apns */,
+			);
+			path = "InsulinWatch Extension";
+			sourceTree = "<group>";
+		};
+		58FC3F222656978900F10BEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58FC3F242656982500F10BEB /* InjectionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58FC3F232656979100F10BEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58FC3F262656A07600F10BEB /* InsulinRecordList.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +206,51 @@
 				583B1B4D25640A7400B43980 /* Sources */,
 				583B1B4E25640A7400B43980 /* Frameworks */,
 				583B1B4F25640A7400B43980 /* Resources */,
+				585B0F2625655577000CFB2D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				585B0F2425655577000CFB2D /* PBXTargetDependency */,
 			);
 			name = InsulinHelper;
 			productName = InsulinHelper;
 			productReference = 583B1B5125640A7400B43980 /* InsulinHelper.app */;
 			productType = "com.apple.product-type.application";
+		};
+		585B0F0525655574000CFB2D /* InsulinWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585B0F2D25655577000CFB2D /* Build configuration list for PBXNativeTarget "InsulinWatch" */;
+			buildPhases = (
+				585B0F0425655574000CFB2D /* Resources */,
+				585B0F2925655577000CFB2D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				585B0F1525655576000CFB2D /* PBXTargetDependency */,
+			);
+			name = InsulinWatch;
+			productName = InsulinWatch;
+			productReference = 585B0F0625655574000CFB2D /* InsulinWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		585B0F1125655576000CFB2D /* InsulinWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585B0F2C25655577000CFB2D /* Build configuration list for PBXNativeTarget "InsulinWatch Extension" */;
+			buildPhases = (
+				585B0F0E25655576000CFB2D /* Sources */,
+				585B0F0F25655576000CFB2D /* Frameworks */,
+				585B0F1025655576000CFB2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InsulinWatch Extension";
+			productName = "InsulinWatch Extension";
+			productReference = 585B0F1225655576000CFB2D /* InsulinWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +262,12 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					583B1B5025640A7400B43980 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					585B0F0525655574000CFB2D = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					585B0F1125655576000CFB2D = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -115,6 +286,8 @@
 			projectRoot = "";
 			targets = (
 				583B1B5025640A7400B43980 /* InsulinHelper */,
+				585B0F0525655574000CFB2D /* InsulinWatch */,
+				585B0F1125655576000CFB2D /* InsulinWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -126,7 +299,26 @@
 			files = (
 				583B1B6125640A7600B43980 /* LaunchScreen.storyboard in Resources */,
 				583B1B5E25640A7600B43980 /* Assets.xcassets in Resources */,
+				58EABF71256433CF0094E175 /* Icon-180.png in Resources */,
+				58EABF74256434040094E175 /* Icon-120.png in Resources */,
 				583B1B5C25640A7400B43980 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B0F0425655574000CFB2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585B0F0C25655576000CFB2D /* Assets.xcassets in Resources */,
+				585B0F0A25655574000CFB2D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B0F1025655576000CFB2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585B0F2025655577000CFB2D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +335,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		585B0F0E25655576000CFB2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585B0F1C25655576000CFB2D /* NotificationController.swift in Sources */,
+				58FC3F252656982500F10BEB /* InjectionModel.swift in Sources */,
+				5887837525C1C8030009A598 /* GlucoseRecorder.swift in Sources */,
+				585B0F1E25655576000CFB2D /* ComplicationController.swift in Sources */,
+				58FC3F272656A07600F10BEB /* InsulinRecordList.swift in Sources */,
+				585B0F1A25655576000CFB2D /* ExtensionDelegate.swift in Sources */,
+				585B0F1825655576000CFB2D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		585B0F1525655576000CFB2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 585B0F1125655576000CFB2D /* InsulinWatch Extension */;
+			targetProxy = 585B0F1425655576000CFB2D /* PBXContainerItemProxy */;
+		};
+		585B0F2425655577000CFB2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 585B0F0525655574000CFB2D /* InsulinWatch */;
+			targetProxy = 585B0F2325655577000CFB2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		583B1B5A25640A7400B43980 /* Main.storyboard */ = {
@@ -160,6 +379,14 @@
 				583B1B6025640A7600B43980 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		585B0F0825655574000CFB2D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				585B0F0925655574000CFB2D /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -287,8 +514,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AGXT32S6QW;
+				DEVELOPMENT_TEAM = NVDTKCXV2H;
 				INFOPLIST_FILE = InsulinHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,8 +534,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AGXT32S6QW;
+				DEVELOPMENT_TEAM = NVDTKCXV2H;
 				INFOPLIST_FILE = InsulinHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +545,90 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		585B0F2725655577000CFB2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVDTKCXV2H;
+				IBSC_MODULE = InsulinWatch_Extension;
+				INFOPLIST_FILE = InsulinWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = L1ZI7.InsulinHelper.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		585B0F2825655577000CFB2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVDTKCXV2H;
+				IBSC_MODULE = InsulinWatch_Extension;
+				INFOPLIST_FILE = InsulinWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = L1ZI7.InsulinHelper.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		585B0F2A25655577000CFB2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVDTKCXV2H;
+				INFOPLIST_FILE = "InsulinWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = L1ZI7.InsulinHelper.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		585B0F2B25655577000CFB2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVDTKCXV2H;
+				INFOPLIST_FILE = "InsulinWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = L1ZI7.InsulinHelper.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Release;
 		};
@@ -336,6 +649,24 @@
 			buildConfigurations = (
 				583B1B6625640A7600B43980 /* Debug */,
 				583B1B6725640A7600B43980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585B0F2C25655577000CFB2D /* Build configuration list for PBXNativeTarget "InsulinWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585B0F2A25655577000CFB2D /* Debug */,
+				585B0F2B25655577000CFB2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585B0F2D25655577000CFB2D /* Build configuration list for PBXNativeTarget "InsulinWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585B0F2725655577000CFB2D /* Debug */,
+				585B0F2825655577000CFB2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

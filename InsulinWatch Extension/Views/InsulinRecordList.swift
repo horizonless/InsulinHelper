@@ -15,22 +15,13 @@ struct InsulinRecordList: View {
     var body: some View {
         List {
             ForEach(data.records, id: \.id) { record in
-                NavigationLink(destination: InsulinCell(record: record)) {
+                ZStack{
+                    InsulinCell(record: record)
                 }
-//                .listRowPlatterColor(Color(topic.color))
             }
-//            .onMove { self.data.moveTopic(from: $0, to: $1) }
-//            .onDelete { self.data.deleteTopic(at: $0) }
         }
         .listStyle(CarouselListStyle())
-        .navigationBarTitle(Text("Pop Quiz!"))
-//        List {
-//            VStack {
-//                ForEach(data.records, id: \.id) { result in
-//                    Text("Result: \(result.time)")
-//                }
-//            }
-//        }
+        .navigationBarTitle(Text("Insulin Records!"))
     }
 }
 
@@ -42,7 +33,6 @@ struct InsulinCell: View{
             Text("\(record.amount)").font(.title)
             VStack(alignment: .leading) {
                 Text(record.time).font(.system(.headline, design: .rounded))
-//                Text(record.type)
             }
         }
     }

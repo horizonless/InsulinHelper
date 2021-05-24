@@ -27,6 +27,7 @@
 		58EABF74256434040094E175 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EABF73256434040094E175 /* Icon-120.png */; };
 		58FC3F252656982500F10BEB /* InjectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FC3F242656982500F10BEB /* InjectionModel.swift */; };
 		58FC3F272656A07600F10BEB /* InsulinRecordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FC3F262656A07600F10BEB /* InsulinRecordList.swift */; };
+		58FC3F29265BFEAE00F10BEB /* RecordInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FC3F28265BFEAE00F10BEB /* RecordInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		58EABF73256434040094E175 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 		58FC3F242656982500F10BEB /* InjectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionModel.swift; sourceTree = "<group>"; };
 		58FC3F262656A07600F10BEB /* InsulinRecordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinRecordList.swift; sourceTree = "<group>"; };
+		58FC3F28265BFEAE00F10BEB /* RecordInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				58FC3F222656978900F10BEB /* Model */,
 				58FC3F232656979100F10BEB /* Views */,
 				585B0F1725655576000CFB2D /* InterfaceController.swift */,
+				58FC3F28265BFEAE00F10BEB /* RecordInterface.swift */,
 				5887837425C1C8030009A598 /* GlucoseRecorder.swift */,
 				585B0F1925655576000CFB2D /* ExtensionDelegate.swift */,
 				585B0F1B25655576000CFB2D /* NotificationController.swift */,
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58FC3F29265BFEAE00F10BEB /* RecordInterface.swift in Sources */,
 				585B0F1C25655576000CFB2D /* NotificationController.swift in Sources */,
 				58FC3F252656982500F10BEB /* InjectionModel.swift in Sources */,
 				5887837525C1C8030009A598 /* GlucoseRecorder.swift in Sources */,

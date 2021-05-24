@@ -21,9 +21,12 @@
                                         <segue destination="AgC-eL-Hgc" kind="push" id="j9y-z0-4Rf"/>
                                     </connections>
                                 </button>
-                                <button width="90" height="90" alignment="left" title="三要素" id="sdq-Yu-zBf">
+                                <button width="90" height="90" alignment="left" title="记录" id="sdq-Yu-zBf">
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="17"/>
+                                    <connections>
+                                        <segue destination="HUd-bZ-d8a" kind="push" id="AFE-ie-cDa"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -141,6 +144,22 @@
                 <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="InsulinWatch" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--RecordInterface-->
+        <scene sceneID="ruj-ib-uMT">
+            <objects>
+                <controller id="HUd-bZ-d8a" userLabel="RecordInterface">
+                    <items>
+                        <group width="200" height="200" alignment="center" verticalAlignment="center" id="ozX-xm-YuQ">
+                            <items>
+                                <picker width="72" height="188" alignment="center" id="U2v-ot-Kgl"/>
+                                <button alignment="center" verticalAlignment="center" title="Done" id="its-7C-UA9"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="467.86956521739125" y="-219.70982142857144"/>
         </scene>
     </scenes>
     <resources>

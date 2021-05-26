@@ -32,7 +32,9 @@ struct InsulinCell: View{
         HStack {
             Text("\(record.amount)").font(.title)
             VStack(alignment: .leading) {
-                Text(record.time).font(.system(.headline, design: .rounded))
+                Text(record.time)
+                .font(.system(.headline, design: .rounded))
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
         }
     }
@@ -40,6 +42,6 @@ struct InsulinCell: View{
 
 struct InsulinRecordList_Previews: PreviewProvider {
     static var previews: some View {
-        InsulinRecordList(data: RecordsListModel.previewRecordsListModel)
+        InsulinRecordList(data: RecordsListModel.recordList)
     }
 }

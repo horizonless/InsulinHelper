@@ -12,16 +12,16 @@
             <objects>
                 <controller id="qTN-cz-7io">
                     <items>
-                        <group width="1" alignment="left" id="yLF-jk-Oar">
+                        <group width="1" height="0.5" alignment="left" id="yLF-jk-Oar">
                             <items>
-                                <button width="90" height="90" alignment="right" title="能量" id="f6P-jf-TwU">
+                                <button width="0.5" height="1" alignment="right" title="能量" id="f6P-jf-TwU">
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <segue destination="AgC-eL-Hgc" kind="push" id="j9y-z0-4Rf"/>
                                     </connections>
                                 </button>
-                                <button width="90" height="90" alignment="left" title="记录" id="sdq-Yu-zBf">
+                                <button width="0.5" height="1" alignment="left" title="记录" id="sdq-Yu-zBf">
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
@@ -30,13 +30,13 @@
                                 </button>
                             </items>
                         </group>
-                        <group width="1" alignment="left" id="t1i-xn-9uW">
+                        <group width="1" height="0.5" alignment="left" id="t1i-xn-9uW">
                             <items>
-                                <button width="90" height="90" alignment="left" title="转化帮手" id="TDm-z2-Jc2">
+                                <button width="0.5" height="1" alignment="left" title="转化帮手" id="TDm-z2-Jc2">
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="17"/>
                                 </button>
-                                <button width="90" height="90" alignment="right" title="血糖记录" id="Oav-Mg-M2a">
+                                <button width="0.5" height="1" alignment="right" title="血糖记录" id="Oav-Mg-M2a">
                                     <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
@@ -148,15 +148,28 @@
         <!--RecordInterface-->
         <scene sceneID="ruj-ib-uMT">
             <objects>
-                <controller id="HUd-bZ-d8a" userLabel="RecordInterface">
+                <controller id="HUd-bZ-d8a" userLabel="RecordInterface" customClass="RecordInterface" customModule="InsulinWatch_Extension">
                     <items>
                         <group width="200" height="200" alignment="center" verticalAlignment="center" id="ozX-xm-YuQ">
                             <items>
-                                <picker width="72" height="188" alignment="center" id="U2v-ot-Kgl"/>
-                                <button alignment="center" verticalAlignment="center" title="Done" id="its-7C-UA9"/>
+                                <picker width="72" height="188" alignment="center" id="U2v-ot-Kgl">
+                                    <connections>
+                                        <action selector="PickerForAmount:" destination="HUd-bZ-d8a" id="QSO-bR-EzH"/>
+                                    </connections>
+                                </picker>
+                                <button alignment="center" verticalAlignment="center" title="记录" id="its-7C-UA9">
+                                    <color key="backgroundColor" red="0.1337955038055425" green="0.39393939393939392" blue="0.18055992976196256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="RecordAmount" destination="HUd-bZ-d8a" id="HMO-A0-NBR"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="SetBtn" destination="its-7C-UA9" id="HVS-Mw-vPd"/>
+                        <outlet property="amountPicker" destination="U2v-ot-Kgl" id="sP8-HS-7Ju"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="467.86956521739125" y="-219.70982142857144"/>

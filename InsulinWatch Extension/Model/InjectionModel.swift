@@ -15,6 +15,15 @@ enum InsulinType : String {
 struct RecordsListModel: Identifiable{
     var id = UUID()
     var records: [InsulinRecordModel]
+    
+    
+    init(data : [InsulinRecordModel]){
+        self.records   = data
+    }
+    
+    mutating func AddRecord(record : InsulinRecordModel){
+        self.records.append(record)
+    }
 }
 
 struct InsulinRecordModel: Identifiable{
@@ -35,5 +44,6 @@ extension InsulinRecordModel {
 }
 
 extension RecordsListModel {
-    static let previewRecordsListModel = RecordsListModel(records: [InsulinRecordModel.previewIndulinRecordModel, InsulinRecordModel(time: "5:00", amount: 10, type: InsulinType.LongActiong)])
+//    static let previewRecordsListModel = RecordsListModel(records: [InsulinRecordModel.previewIndulinRecordModel, InsulinRecordModel(time: "5:00", amount: 10, type: InsulinType.LongActiong)])
+    static var recordList = RecordsListModel(data: [])
 }

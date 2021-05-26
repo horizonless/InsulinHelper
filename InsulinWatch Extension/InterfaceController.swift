@@ -37,6 +37,8 @@ class InterfaceController: WKInterfaceController {
         }
         picker.setItems(pickerItems)
         ratioPicker.setItems(pickerItemsRatio)
+        rationNumber = 10
+        enerygNumber = 300
     }
     
     @IBAction func pickerDidChange(value: Int) {

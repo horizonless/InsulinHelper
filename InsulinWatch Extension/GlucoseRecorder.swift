@@ -12,7 +12,7 @@ class GlucoseRecorder: WKHostingController<InsulinRecordList> {
 //    @IBOutlet weak var currentTimeLabel: WKInterfaceLabel!
 //    var timer = Timer();
     override var body: InsulinRecordList{
-        InsulinRecordList(data: RecordsListModel.previewRecordsListModel)
+        InsulinRecordList(data: RecordsListModel.recordList)
     }
     override func awake(withContext context: Any?) {
 //        getCurrentTime();

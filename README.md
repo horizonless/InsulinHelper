@@ -8,8 +8,10 @@ The goal of the project is to create a simple insulin dose calculator and record
 
 # TODO:
 ### Watch
-- [ ] iOS watch fast record
-
+- [x] iOS watch fast record
+- [ ] Viration mode change after record
+- [ ] Polish UI UX
+- [ ] Interact with Iphone
 ### Phone
 - [ ] Enery per meal
 - [ ] Recording feature
